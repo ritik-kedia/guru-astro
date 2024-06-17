@@ -1,0 +1,170 @@
+@media (max-width: 576px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    .logo img {
+        height: 35px;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger::before {
+        top: -8px;
+    }
+
+    .hamburger::after {
+        bottom: -8px;
+    }
+
+    .nav-open .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translate(7px, -7px);
+    }
+
+    .nav-open .hamburger::after {
+        transform: rotate(-90deg) translate(7px, 7px);
+    }
+
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -70%;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        justify-content: center;
+        z-index: 999;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+
+    .nav-open nav {
+        right: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 1.5rem;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #ffd700;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .section {
+        padding: 4rem 1rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    .services-section {
+        padding: 3rem 1rem;
+    }
+
+    .services-list li {
+        margin-bottom: 0.5rem;
+        padding: 8px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+        margin-bottom: 0.5rem;
+    }
+
+}

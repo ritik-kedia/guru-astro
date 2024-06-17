@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Astro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <!-- Header content, including logo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Guru Astro Logo">
+        </div>
+
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section  with fade-in animation -->
+        <section class="hero" id="hero">
+            <div class="hero-content fade-in">
+                <h1>Welcome to Guru Astro</h1>
+                <p>Your trusted source for astrology insights.</p>
+                <a href="#services" class="cta-button">Explore Services</a>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="section about-section" id="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Solutions to all your Problems with the Help of the Verified Astrologers.<br /> You can take a 24x7
+                    online Consult with our verified astrologers via video call or chat.</p>
+            </div>
+        </section>
+
+        <!-- Services section with slide-in animation -->
+        <section class="section services-section" id="services">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+                <li class="slide-in">Birth Chart Analysis</li>
+                <li class="slide-in">Compatibility Reading</li>
+                <li class="slide-in">Career Forecast</li>
+                <li class="slide-in">Love and Relationship Advice</li>
+                <li class="slide-in">Financial Outlook</li>
+                <li class="slide-in">Annual Horoscope</li>
+                <li class="slide-in">Spiritual Guidance</li>
+            </ul>
+        </section>
+
+        <!-- Contact section with rotate animation for button -->
+        <section class="section contact-section" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="rotate-button rotate" onclick="rotateButton(event)">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 Guru Astro. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
